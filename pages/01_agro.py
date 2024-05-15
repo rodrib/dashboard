@@ -166,7 +166,7 @@ def plot_top_right():
         color="Scenario",
         barmode="group",
         text_auto=".2s",
-        title="Sales for Year 2023",
+        title="Ventas para el año 2023",
         height=400,
     )
     fig.update_traces(
@@ -202,7 +202,7 @@ def plot_bottom_left():
         color="Scenario",
         markers=True,
         text="sales",
-        title="Monthly Budget vs Forecast 2023",
+        title="Presupuesto Mensual vs Previsión 2023",
     )
     fig.update_traces(textposition="top center")
     st.plotly_chart(fig, use_container_width=True)
@@ -243,7 +243,7 @@ def plot_bottom_right():
         x="Year",
         y="sales",
         color="Account",
-        title="Actual Yearly Sales Per Account",
+        title="Ventas anuales reales por cuenta",
     )
     st.plotly_chart(fig, use_container_width=True)
 
@@ -260,7 +260,7 @@ with top_left_column:
 
     with column_1:
         plot_metric(
-            "Total Accounts Receivable",
+            "Cuentas por cobrar",
             6621280,
             prefix="$",
             suffix="",
@@ -271,7 +271,7 @@ with top_left_column:
 
     with column_2:
         plot_metric(
-            "Total Accounts Payable",
+            "Cuentas por pagar",
             1630270,
             prefix="$",
             suffix="",
@@ -281,11 +281,11 @@ with top_left_column:
         plot_gauge(10, "#FF8700", " days", "In Stock", 31)
 
     with column_3:
-        plot_metric("Equity Ratio", 75.38, prefix="", suffix=" %", show_graph=False)
+        plot_metric("Relación de capital", 75.38, prefix="", suffix=" %", show_graph=False)
         plot_gauge(7, "#FF2B2B", " days", "Out Stock", 31)
         
     with column_4:
-        plot_metric("Debt Equity", 1.10, prefix="", suffix=" %", show_graph=False)
+        plot_metric("Capital de deuda", 1.10, prefix="", suffix=" %", show_graph=False)
         plot_gauge(28, "#29B09D", " days", "Delay", 31)
 
 with top_right_column:
