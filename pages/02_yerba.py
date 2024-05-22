@@ -11,7 +11,7 @@ st.title("Ventas de Yerba Dashboard")
 st.markdown("_Prototype v0.4.1_")
 
 # Leer el archivo CSV
-nombre_archivo = 'pages\data-dummies - yerba.csv'
+nombre_archivo = 'pages\data-dummies - yerba (1).csv'
 df = pd.read_csv(nombre_archivo)
 
 all_months = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
