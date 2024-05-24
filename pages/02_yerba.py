@@ -228,7 +228,7 @@ def plot_bottom_right():
         x="Año",
         y="Ventas",
         color="Cuenta",
-        title="Ventas anuales reales por cuenta",
+        title="Gastos Anuales",
     )
     st.plotly_chart(fig, use_container_width=True)
 
